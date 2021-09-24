@@ -1,0 +1,20 @@
+@media (max-width:32.5em){
+
+    main{display: block;
+        text-align: center;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .footer-info{
+        padding: 10px;
+    }
+    
+
+}
