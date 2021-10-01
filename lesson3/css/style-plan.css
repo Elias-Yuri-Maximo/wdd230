@@ -7,10 +7,15 @@ header{
     
 }
 
+img{
+    max-width: 100%;
+}
+
 nav{
     grid-row: 2/3;
     text-align: center;
-    
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav ul {
@@ -19,7 +24,8 @@ nav ul {
     text-align: center;
 	list-style-type:none;
     
-    height: 100%;
+    /*--height: 100%;*/
+
 
     overflow: hidden;
     margin:0;
@@ -46,9 +52,9 @@ nav ul {
         font-size: 1.2em;
     }
 
-@media (max-width:37em){
+@media only screen and (min-width:37em){
     nav ul { display: flex; }
-		nav ul li { flex: 1 1 100%; } 
+	nav ul li { flex: 1 1 100%; } 
 
     main{
         display: block;
