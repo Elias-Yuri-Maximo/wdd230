@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Roboto:wght@300&display=swap');
+
+header{
+    grid-row: 1/2;
+    background-color: #101D42;
+    
+}
+
+nav{
+    grid-row: 2/3;
+    background-color:#0D1317;
+
+}
+
+body{
+    background-color: #E0F3F6;
+}
+
+main{
+    display: grid;
+    grid-template-rows:   150px 50px 350px 150px;
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: snow;
+}
+
+.content-typography{
+    display: inline-block;
+}
+
+footer{
+    grid-row: 4/5;
+    background-color:#101D42;
+}
+
+.dark-p{
+    color: snow;
+}
+
+h1{
+    font-family: "montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3.2em;
+}
+
+h2{
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-size: 2.1em;
+    font-weight: 600;
+
+}
+
+h3{
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+}
+h4{
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+p{
+    font-family: "roboto", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
