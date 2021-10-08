@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Roboto:wght@300&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*CSS RELATED TO THE HEADER*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+header{
+    max-height: 200px;
+    display: flex;
+    margin-bottom: 3px;
+    background-color: rgb(211, 246, 255);
+}
+
+
+img{
+    max-height: 150px;
+    padding: 10px;
+    
+    border-radius: 100px;
+}
+
+h1{
+font-family: "montserrat", sans-serif;
+font-style: italic;
+font-weight: 400;
+font-size: 2.7em;
+margin: 0px;
+}
+
+
+
+h2{
+    margin: 0px;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+}
+
+/*CSS RELATED TO THE NAV BAR*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.active{
+    text-decoration: underline;
+}
+nav{
+    background-color: #0D1317;
+    font-family: "roboto", Verdana, Tahoma, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, 0.2);  color: white;}
+
+nav ul li a:hover{background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide{display: none;}
+
+/*CSS RELATED TO MAIN*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+p{
+    font-family: "roboto", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main h2{
+    margin: 15px;
+    font-size: 1.7em;
+}
+
+main div{
+    margin: 1em;
+    background-color: hsl(204, 6%, 85%);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/*CSS RELATED TO FOOTER*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    text-align: center;
+   
+    margin: 0px;
+    background-color: hsl(210, 1%, 65%);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    
+    
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

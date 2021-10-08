@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html Lang="en-us">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
+        <!--reference the stylesheet-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYU idaho WDD 230 - Elias Maximo - Assignment Portal</title>
+        
+        <meta name="description" content="Website about the weather in Preston idaho">
+        <!--Write a description for purpouse-->
+
+        <script defer src="js/preston-script.js"></script>
+        <!--reference the script-->
+    </head>
+
+<body>
+
+    <header> <img src="images/nimbus.png" alt="nimbus logo">
+    
+    <div>
+        <h1>Nimbus Weather News</h1>
+        <h2>Guiding you through cloudy days<h2>
+    </div>
+    
+    
+    </header>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide"> 
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+               
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div><p> hero image with weather summary</p></div>
+        <div><p> 3 day forecast</p></div>
+        <div><p> arcticle</p></div>
+        <div><p> contact information</p></div>
+    
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
+        <p>Last modified: <span id="currentdate"></span> </p>    
+    </footer>
+
+</body>
+</html>
