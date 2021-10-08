@@ -29,7 +29,7 @@ img{
 h1{
 font-family: "montserrat", sans-serif;
 font-style: italic;
-font-weight: 400;
+font-weight: 700;
 font-size: 2.7em;
 margin: 0px;
 }
@@ -72,7 +72,7 @@ nav ul li a{
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: black;
+    
     color: rgba(255,255,255,0.8);
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -87,6 +87,12 @@ nav ul.hide{display: none;}
 /*CSS RELATED TO MAIN*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+main{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    }
 
 p{
     font-family: "roboto", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -95,7 +101,11 @@ p{
 main h2{
     margin: 15px;
     font-size: 1.7em;
+
 }
+
+
+
 
 main div{
     margin: 1em;
@@ -111,7 +121,8 @@ footer{
     text-align: center;
    
     margin: 0px;
-    background-color: hsl(210, 1%, 65%);
+    color: white;
+    background-color: black;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
     padding: 5px;
     

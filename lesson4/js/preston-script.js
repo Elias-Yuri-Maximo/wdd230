@@ -6,5 +6,11 @@ function toggleMenu(){
 const copyrightyear = document.getElementById("copyrightyear");
 copyrightyear.textContent = new Date().getFullYear();
 
-const currentdate = document.getElementById("currentdate");
-currentdate.textContent = new Date();
+
+const event = new Date();
+
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+
+currentdate.textContent = event.toLocaleDateString('en-UK', options);
+
