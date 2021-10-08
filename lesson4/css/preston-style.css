@@ -54,9 +54,7 @@ nav button{
     color: white;
 }
 
-.active{
-    text-decoration: underline;
-}
+
 nav{
     background-color: #0D1317;
     font-family: "roboto", Verdana, Tahoma, sans-serif;
