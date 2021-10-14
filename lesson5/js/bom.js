@@ -76,7 +76,8 @@ function addBook(){
             })
       
             
-
+            input.focus()
+            input.value = "";
     }
     
 }
