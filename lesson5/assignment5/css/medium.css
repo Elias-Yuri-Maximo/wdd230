@@ -1,5 +1,51 @@
 @media only screen and (min-width: 35rem) {
 
-    
+    h1{
+        font-family: "montserrat", sans-serif;
+        font-style: italic;
+        font-weight: 1000;
+        font-size: 3.3em;
+        margin: 0px;
+        }
 
+
+        .weather-summary {
+            position: absolute;
+            top: 25px;
+            left:30px;
+            background-color: black;
+            color: white;
+            border: 1px solid #000;
+            padding: 1rem;
+            
+            opacity: .85;
+        }
+
+        .weather-summary h2{
+
+            font-size: 2em;
+        }
+        .weather-summary p{
+            font-size: 1em;
+        }
+        
+        .contact-information{
+
+            height: auto;
+            
+        }
+        .contact-information .map{
+    
+            max-height: 100% ;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+            
+        
+            
+            display: block;
+        
+        }
+
+        
 } /*end large */
