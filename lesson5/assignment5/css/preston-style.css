@@ -124,24 +124,23 @@ main div{
 /*Code refering to the weather summary and hero image*/
 
 .weather-summary {
-	position: absolute;
-	top: 25px;
-	left:30px;
+	display: block;
 	background-color: black;
     color: white;
 	border: 1px solid #000;
 	padding: 0.5rem;
 	
-	opacity: .85;
+	opacity: .95;
 }
 
 .weather-summary h2{
 
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .weather-summary p{
-    font-size: .8em;
+    font-size: 1em;
 }
+
 
 p{
     font-family: "roboto", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
