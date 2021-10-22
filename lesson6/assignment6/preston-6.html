@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html Lang="en-us">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
+        <!--reference the stylesheet-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYU idaho WDD 230 - Elias Maximo - Assignment Portal</title>
+        
+        <meta name="description" content="Website about the weather in Preston idaho">
+        <!--Write a description for purpouse-->
+
+        <script defer src="js/preston-script.js"></script>
+        <!--reference the script-->
+    </head>
+
+<body>
+
+    <div class="pancake" id="pancake"><p>Saturday = Preston Pancakes in the Park!  
+        9:00 a.m. Saturday at the city park pavilion.</p></div>
+
+
+    <header> 
+        
+        <figure class="logo">
+            <img src="images/logo/nimbus-150x150.png"
+            srcset="images/logo/nimbus-150x150.png 1x,
+            images/logo/nimbus-300x300.png 2x,
+            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
+        </figure>
+    
+    <div>
+        <h1>Nimbus Weather News</h1>
+        <h2>Guiding you through cloudy days</h2>
+    </div>
+    
+    
+    </header>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide"> 
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+               
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <!--HERO IMAGE DIV-->
+        <div class="hero-div"><img src="images/Idaho-city.jpg" alt="Picture of a city in Idaho">
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>High: <span id="high">2 °C</span></p>
+                <p>Wind Chill: <span id="wind-chill">°C</span></p>
+                <p>Humidity: <span id="humidity">70%</span></p>
+                <p>Wind Speed: <span id="wind-speed">5 mph</span></p>
+               </section>
+        </div>
+
+
+        <!--FIVE DAY FORECAST-->
+        <h2>Five Day Forecast</h2>
+        <div class="five-day-forecast">
+            <section >
+                <div class="weekday"><p>MON</p></div>
+                <div><img src="images/sun-icon.png" alt="sun icon">
+                    <p>20°C</p></div>
+            </section>
+                <!--day 1-->
+
+            <section>
+                <div class="weekday"><p>TUE</p></div>
+                <div><img src="images/wind-icon.png" alt="wind icon">
+                <p>20°C</p></div>
+            </section>
+
+                <!--day 2-->
+            <section>
+
+                <div class="weekday"><p>WED</p></div>
+                <div><img src="images/sun-icon.png" alt="Sun icon">
+                <p>20°C</p></div>
+            </section>
+
+                <!--day 3-->
+            <section >
+                <div class="weekday"><p>THU</p></div>
+                <div><img src="images/sun-cloud-icon.png" alt="sun cloud icon">
+                <p>20°C</p></div>
+            </section>
+
+                <!--day 4-->
+            <section>
+                <div class="weekday"><p>FRI</p></div>
+                <div><img src="images/rain-icon.png" alt="rain icon">
+                <p>20°C</p></div>
+            </section>
+                <!--day 5-->
+
+        </div>
+
+
+
+
+        <h2>Article</h2>
+        <div class = "article">
+
+            
+
+            <h3>Teens playing with fireworks started Boise Foothills Fire, ACSO says</h3>
+            <p class="credit">Author: KTVB Staff</p>
+
+            <img src="images/wildfire.jpg" alt="Burnt trees and grass">
+            <p> &emsp; On Wednesday, Oct. 6, the Goose Fire burned more than 425 acres 
+                in the Boise Foothills. Soon after, investigators from the Ada 
+                County Sheriff's Office found the blaze was started by fireworks. 
+                <br>
+                &emsp; Now, the Eagle Fire Department Fire Chief told KTVB on Thursday 
+                that the fire was started after a group of juveniles played with 
+                fireworks north of the Eagle Bike Park in the Boise Foothills. 
+                The fire was started in unincorporated Ada County.
+                <br>                
+                &emsp; According to the Ada County Sheriff's Office, four teens were 
+                identified as being responsible for the fire. The teens, a 15-year-old
+                 girl, a 15-year-old boy and two 16-year-old boys, were lighting off
+                aerial fireworks at about 4:30 p.m. Wednesday near a trail by the
+                Eagle Bike Park.
+                <br>
+                &emsp; Officials added that a man in the area saw the teens and told them to stop and leave.
+                The Ada County Sheriff's Office said in a press release that the teens later moved
+                towards Goose Creek Road and lit off more fireworks, which sparked the Goose Fire.
+                The teens then ran off without trying to put out the grass fire.
+                <br>
+                Source:https://www.ktvb.com/article/news/local/wildfire/acso-goose-fire-boise-foothills-was-started-kids-playing-with-fireworks-juveniles/277-e5ee136f-a087-4355-ad2d-5001f40f7ffe
+                </p></div>
+
+
+
+
+
+        
+        <div class="contact-information">
+            
+            <img class = "map" src="images/map.png" alt="map of idaho">
+
+            <p> The Weather Site 
+            <br> &#x260E; telephone number: +99 9999 9999
+            <br> &#x2709; e-mail: nimbus@gmail.com
+            <br>
+            <img class="social-media" src="images/facebook.png" alt="facebook icon">
+            <img class="social-media" src="images/instagram.jpg" alt="instagram icon">
+            <img class="social-media" src="images/twitter.jpg" alt="twitter icon">
+            
+        </p></div>
+    
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
+        <p><span id="currentdate"></span> </p>    
+    </footer>
+
+</body>
+</html>
