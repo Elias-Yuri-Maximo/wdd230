@@ -62,7 +62,16 @@
         <h2>Preston Idaho</h2>
 
         <!--HERO IMAGE DIV-->
-        <div class="hero-div"><img src="images/Idaho-city.jpg" alt="Picture of a city in Idaho">
+        <div class="hero-div">
+            
+            <picture class="hero-image">
+            
+            <source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+            <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+            <source media="(max-width:800px)" srcset="images/hero-image800.jpeg">
+            <img src="images/hero-image1500.jpeg" alt="Picture of a city in Idaho">
+            </picture>
+
             <section class="weather-summary">
                 <h2>Weather Summary</h2>
                 <p>Currently: <span id="currently">Sunny</span></p>
@@ -141,8 +150,13 @@
 
             <h3>Teens playing with fireworks started Boise Foothills Fire, ACSO says</h3>
             <p class="credit">Author: KTVB Staff</p>
-
-            <img src="images/wildfire.jpg" alt="Burnt trees and grass">
+            <figure>
+            <img src="images/wildfire-original.jpg" alt="Burnt trees and grass" sizes="50vw"
+            srcset="images/wildfire200.jpg 200w,
+            images/wildfire500.jpg 500w,
+            images/wildfire800.jpg 800w,
+            images/wildfire-original.jpg 1100w">
+            </figure>
             <p> &emsp; On Wednesday, Oct. 6, the Goose Fire burned more than 425 acres 
                 in the Boise Foothills. Soon after, investigators from the Ada 
                 County Sheriff's Office found the blaze was started by fireworks. 

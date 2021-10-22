@@ -159,6 +159,11 @@ main h2{
     position: relative;
 }
 
+.hero-image{
+    width: 100%;
+}
+
+
 /*Code relating to the forecast */
 
 .five-day-forecast{
@@ -202,7 +207,9 @@ div section div{
 .credit{
     color: rgb(96, 96, 175);
 }
-
+.article figure{margin: 0px;
+    padding:0px
+}
 .article img{
     float: right;
     max-width: 500px;
