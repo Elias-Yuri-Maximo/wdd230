@@ -14,7 +14,7 @@ const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric
 
 currentdate.textContent = event.toLocaleDateString('en-UK', options);
 
-
+//PANCAKE BANNER 
 const d = new Date();
 const weekD = d.getDay();
 console.log(weekD)
@@ -24,3 +24,4 @@ if (weekD == 5){
     console.log('it worked');
     document.querySelector(".pancake").style.display = "block";
 }
+
