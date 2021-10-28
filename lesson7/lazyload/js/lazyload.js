@@ -1,4 +1,41 @@
 
+
+//gets the images that should be displayed 
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+
+//If instersection observer is available
+if('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if(item.isIntersecting) {
+        //Will load only the images tha come into view
+        loadImages(item.target);
+        //Will let go of images that the user is not seeing
+        observer.unobserve(item.target);
+      }
+    });
+  });
+	//Will simply load the images
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
+
+
+
+
+/*
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));
@@ -12,9 +49,6 @@ const loadImages = (image) => {
 imagesToLoad.forEach((img) => {
     loadImages(img);
   });
-
-
-
 
 
   if('IntersectionObserver' in window) {
@@ -34,6 +68,9 @@ imagesToLoad.forEach((img) => {
       loadImages(img);
     });
   }
+
+
+
 /*
 const images = document.querySelectorAll("[data-src]");
 
