@@ -1,0 +1,49 @@
+@media only screen and (min-width: 64rem) {
+nav button{display:none;}
+
+nav ul {margin-left: 2%;}
+
+nav ul.hide{display:block;}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a {
+    border:none;
+    border-right:1px solid rgba(0, 0, 0, 0.3) ;
+    padding: .6rem 1rem;
+}
+
+h1{
+    font-family: "montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 4em;
+    margin: 0px;
+    }
+
+.contact-information{
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+        
+}
+.contact-information .map{
+
+    max-height: 100% ;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    
+    display: block;
+    
+}
+
+.contact-information p{
+    padding: 10px;
+
+}
+
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html Lang="en-us">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../lesson6/assignment6/css/normalize.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../../lesson6/assignment6/css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../../lesson6/assignment6/css/medium.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../../lesson6/assignment6/css/large.css" media="screen" />
+        <!--reference the stylesheet-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYU idaho WDD 230 - Elias Maximo - Assignment Portal</title>
+        
+        <meta name="description" content="Website about the weather in Preston idaho">
+        <!--Write a description for purpouse-->
+
+        <script defer src="js/preston-script.js"></script>
+        <script defer src="js/lazyload.js"></script>
+        <!--reference the script-->
+    </head>
+
+<body>
+
+
+
+    <header> 
+        
+        <figure class="logo">
+            <img src="images/logo/nimbus-150x150.png"
+            srcset="images/logo/nimbus-150x150.png 1x,
+            images/logo/nimbus-300x300.png 2x,
+            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
+        </figure>
+    
+    <div>
+        <h1>Nimbus Weather News</h1>
+        <h2>Guiding you through cloudy days</h2>
+    </div>
+    
+    
+    </header>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide"> 
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../lesson6/assignment6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+               
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Weather Gallery </h2>
+
+
+        <!--GALERY GRID-->
+        <div class="gallery-grid">
+                <!--IMAGE BLUE-CLOUD-->
+            <figure>
+            
+                <!--source media="(max-width:300px)" srcset="images/blue-cloud-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/blue-cloud-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/blue-cloud-1200x800.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/blue-cloud-600x400.jpg" alt="blue-cloud">
+                <p>A cloud in the a blue sky</p>
+            </figure>
+
+                <!--IMAGE RAINBOW-->
+            <figure>
+                <!--source media="(max-width:300px)" srcset="images/rainbow-over-lake-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/rainbow-over-lake-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/rainbow-over-lake-1200x800.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/rainbow-over-lake-600x400.jpg" alt="Rainbow over lake">
+                <p>A rainbow at lake Idaho in Preston</p>
+            </figure>
+
+                <!--IMAGE BUS SNOW-->
+            <figure>
+                <!--source media="(max-width:300px)" srcset="images/bus-snow-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/bus-snow-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/bus-snow-1200x800.jpg.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/bus-snow-600x400.jpg" alt="bus-snow">
+                <p>A Bus in fish haven during a winter day</p>
+            </figure>
+
+                <!--IMAGE-->
+            <figure>
+                <!--source media="(max-width:300px)" srcset="images/dark-ligtning-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/dark-ligtning-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/dark-ligtning-1200x800.jpg.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/dark-ligtning-600x400.jpg" alt="dark-ligtning">
+                <p>A lightning striking a forest</p>
+            </figure>
+
+                <!--IMAGE-->
+            <figure>
+                <!--source media="(max-width:300px)" srcset="images/orange-cloud-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/orange-cloud-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/orange-cloud-1200x800.jpg.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/orange-cloud-600x400.jpg" alt="orange-cloud">
+                <p>Cloud picture from Soda Springs</p>
+            </figure>
+
+                <!--IMAGE-->
+            <figure>
+                <!--source media="(max-width:300px)" srcset="images/orange-storm-cloud-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/orange-storm-cloud-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/orange-storm-cloud-1200x800.jpg.jpg"-->
+                <img src="images/placeholder600x400.png" data-src="images/orange-storm-cloud-1200x800.jpg" alt="orange-storm-cloud">
+                <p>A cumulus nibus registered in Preston</p>
+            </figure>
+        </div>
+                
+
+    
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
+        <p><span id="currentdate"></span> </p>    
+    </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+          WebFont.load({
+         google:{
+             families:[
+                  'Roboto', 'Montserrat'
+              ]
+          }});
+        
+        
+        </script>
+</body>
+</html>
