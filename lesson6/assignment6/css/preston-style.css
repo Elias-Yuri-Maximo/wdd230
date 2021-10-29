@@ -274,23 +274,27 @@ a{
 .gallery-grid figure{
     margin: 0%;
     padding: 0%;
-    
+    text-align: center; 
+}
+
+.gallery-grid p{
+    padding-bottom: 10px;
 }
 
 .gallery-grid figure:hover {box-shadow: 0 0 50px #333;}
 
-.gallery img[data-src] {
+.gallery figure img[data-src] {
     filter: blur(0.8em);
   }
 
-.gallery-grid img{
+.gallery-grid figure img{
     margin: 0%;
     padding: 0%;
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 0.9s;
 }
 
-    
+       
 
 
 
