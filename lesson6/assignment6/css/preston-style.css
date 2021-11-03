@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Roboto:wght@300&display=swap');
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -265,7 +265,7 @@ a{
 /*CSS RELATED TO THE GALERY ONLY*/
 
 .gallery-grid{
-    display: 1fr;
+    display: grid;
     background-color: white;
     border: transparent;
     grid-gap:5px;
@@ -281,7 +281,7 @@ a{
     padding-bottom: 10px;
 }
 
-.gallery-grid figure:hover {box-shadow: 0 0 50px #333;}
+
 
 
 .gallery-grid figure img[data-src] {
