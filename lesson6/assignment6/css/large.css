@@ -61,6 +61,28 @@ h1{
 
         .gallery-grid figure:hover {box-shadow: 0 0 50px #333;}
 
+        /**********************************************************************************************************************/
+        /**********************************************************************************************************************/
+        /**********************************************************************************************************************/
+        /*CSS RELATED TO THE GALERY ONLY*/
+
+
+        .marketing img{max-height: 100%;
+            padding-left: 10px;
+        margin-left: auto;
+        margin-left: auto;}
+
+        .marketing{
+            display: block;
+            border: none;
+            background-color: transparent;
+            
+            grid-column: 2/3;
+            grid-row: 1/3;
+            max-height: 1300px;
+        
+        }
+
 
 }
 
