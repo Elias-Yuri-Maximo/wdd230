@@ -389,7 +389,7 @@ form fieldset{
         margin: 20px;
     }
 
-    .red{
+    #red{
         font-family: 'Roboto', sans-serif;
         font-size: 1.2rem;
     }
