@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Antique&display=swap');
+
+section{
+    background-color: white;
+    text-align: center;
+    border: 5px double rgb(56, 65, 141);
+    padding: 10px;
+    margin: 5px;
+}
+h1{
+    font-family:"Zen Antique", serif ;
+
+}
+h2{
+    font-family:"Zen Antique", serif ;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Medium View*/
+@media only screen and (min-width: 35rem) {
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
+
+/*Large view*/
+@media only screen and (min-width: 64rem) {
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+}
