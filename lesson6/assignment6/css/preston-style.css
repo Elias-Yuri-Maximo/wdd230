@@ -207,6 +207,8 @@ div section div{
 
 .credit{
     color: rgb(96, 96, 175);
+    font-size: 0.9em;
+    margin-top: -3px;
 }
 .article figure{margin: 0px;
     padding:0px
@@ -397,6 +399,51 @@ form fieldset{
     .marketing{
     display: none;
     }
+
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/*HOME CSS*/
+.home-grid * {padding: .35rem;}
+.home-grid h2 {text-align:center;}
+
+.home-grid section {
+	
+    margin: .5rem auto;
+	max-width: 100%;
+    min-width: 0;
+  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home-grid section article {
+    display: block;
+	flex-direction: row;
+    
+}
+
+.home-grid article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.home-grid section article img {max-width: 100%;  min-width: 0;}
+.data { color:black;}
+
+.home-grid div {margin: 0px; background-color: transparent;
+    }
+
+.home-grid .hero-image img{margin-left: -40px; object-fit: contain;
+    padding: 0px;}
+
+.home-grid .data{
+    min-width: 200px;
+}
+
+.home-grid .contact-information{
+    background-color:hsl(204, 6%, 85%);
+}
+
 
 
 

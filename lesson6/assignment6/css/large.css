@@ -66,6 +66,16 @@ h1{
         /**********************************************************************************************************************/
         /*CSS RELATED TO THE GALERY ONLY*/
 
+        .home-grid section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .home-grid section article{
+            display: block;
+            text-align: center;
+        }
+
 
 
 

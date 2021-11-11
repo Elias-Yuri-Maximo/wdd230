@@ -16,7 +16,7 @@
         
 
         <link rel="shortcut icon" href="images/nimbus-favicon.ico">
-        <script defer src="js/dates.js"></script>
+        <script defer src="javascript/populate.js"></script>
     </head>
  
     
@@ -43,16 +43,182 @@
         <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide"> 
-            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="../../index.html">Home</a></li>
             <li><a href="../../lesson6/assignment6/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>    
             <li><a href="../../lesson8/assignment-8/stormcenter.html">Storm Center</a></li>
-            <li class="active"><a href="../../lesson7/assignment7/gallery-7.html">Gallery</a></li>
+            <li ><a href="../../lesson7/assignment7/gallery-7.html">Gallery</a></li>
                
         </ul>
     </nav>
-    <main>
+    <main class = "home-grid" >
+
+        <h2>Welcome to Nimbus!</h2>
+    
+
+            <!--HERO IMAGE DIV-->
+            <div class="hero-div">
+            
+                <picture class="hero-image">
+                    
+                <source media="(max-width:300px)" srcset="images/city-preview/home-hero-image-300x200.jpg">
+                <source media="(max-width:600px)" srcset="images/city-preview/home-hero-image-600x400.jpg">
+                <source media="(max-width:1200px)" srcset="images/city-preview/home-hero-image-1200x800.jpg">
+                <img src="images/city-preview/home-hero-image-1200x800.jpg" alt="Picture the Idaho sky and field">
+                </picture>
+        
+
+            </div>
+        <!--Cities Preview-->
+
+        <section>
+            <!--
+            <article class="">
+                
+                <div>
+                <img src="images/city-preview/preston-1200x800.jpg" alt="image 1">
+                </div>
+                <div class="data" id="Preston Idaho">
+                    <h3>
+                        Preston Idaho
+                    </h3>
+                    <p class="credit">Home of Napoleon Dynamite</p>
+                    <p>
+                     Placeholder Year Founded
+                    </p>
+                    <p>
+                        Placeholder population
+                    </p>
+                    <p>
+                        Placeholder Anual Rainfall
+                    </p>
+
+                </div> 
+            
+            </article>
+            <article>
+                <div>
+                <img src="images/city-preview/soda-springs-1200x800.jpg" alt="image 2">
+                </div>
+                <div class="data" id="Soda Springs">
+                    <h3>
+                        Soda Springs
+                    </h3>
+                    <p class="credit">Historic Oregon Trail Oasis. The soda is on us.</p>
+                    <p>
+                        Placeholder Year Founded
+                       </p>
+                       <p>
+                           Placeholder population
+                       </p>
+                       <p>
+                           Placeholder Anual Rainfall
+                       </p>
+                    
+                </div>
+            </article>
+            <article>
+                
+                <div>
+                <img src="images/city-preview/fish-haven-1200x800.jpg" alt="image 3">
+                </div>
+                <div class="data" id="Fish Haven">
+                    <h3>
+                        Fish Haven
+                    </h3>
+                    <p class="credit">This is Fish Haven</p>
+                    <p>
+                        Placeholder Year Founded
+                       </p>
+                       <p>
+                           Placeholder population
+                       </p>
+                       <p>
+                           Placeholder Anual Rainfall
+                       </p>
+   
+                </div>
+
+
+            
+            </article>
+        -->
+        </section>
+
+        <h2>Latest News</h2>
+        <div class = "article">
+
+            
+
+            <h3>Abnormally Dry Weather in Idaho, says William Macbeth</h3>
+            <p class="credit">Author: Jamnes Nortonson</p>
+            <figure>
+            <img src="images/article-image/dry-Idaho.jpg" alt="Burnt trees and grass" sizes="50vw"
+            srcset="images/article-image/dry-idaho200.jpg 200w,
+            images/article-image/dry-idaho500.jpg 500w,
+            images/article-image/dry-idaho800.jpg 800w,
+            images/article-image/dry-idaho1200.jpg 1200w">
+            </figure>
+            <p> &emsp; Dry weather for the Treasure Valley Wednesday with light winds and near seasonal 
+                temperatures. High clouds will continue to stream into the region from the west into the
+                 afternoon and then move south. Highs will reach the low 50's for the valley, mid to upper
+                  30's for the mountain valleys.
+                <br>
+                &emsp; On Thursday, another surge of moisture will bring additional valley rain and high
+                 elevation snow. Moisture will arrive very early Thursday morning in southwest Idaho 
+                 and bring snow to mountain valleys initially, likely transitioning over to a rain/snow 
+                 mix by late morning and early afternoon. Snow levels will hover above 3,500 feet with
+                  minor accumulations expected. Rain in the Treasure Valley will taper off throughout the
+                   afternoon, roughly 0.10-0.30" of rain is expected.
+                <br>                
+                &emsp; High pressure will push the storm track just north of the Treasure Valley for the
+                 weekend. Expect mostly cloudy skies Saturday and Sunday. Temperatures will likely hover 
+                 in the upper 50's in the valley, mid 40's in the mountain valleys. The mountain areas to 
+                 the north, however, will continue to see additional rain and snow showers into the weekend. 
+                 Snow accumulations will likely remain above 6,000 feet with the best chances of precipitation
+                falling on Friday and Saturday. The long-range forecast shows another storm could also be
+                in the works for Tuesday of next week.
+                <br>
+
+                &emsp; Officials added that a man in the area saw the teens and told them to stop and leave.
+                The Ada County Sheriff's Office said in a press release that the teens later moved
+                towards Goose Creek Road and lit off more fireworks, which sparked the Goose Fire.
+                The teens then ran off without trying to put out the grass fire.
+                <br>
+                Source:https://idahonews.com/weather
+                </p></div>
+
+
+
+
+
+        
+        <div class="contact-information">
+            
+            <img class = "map" src="images/map.png" alt="map of idaho">
+
+            <p> The Weather Site 
+            <br> &#x260E; telephone number: +99 9999 9999
+            <br> &#x2709; e-mail: nimbus@gmail.com
+            <br>
+            
+            <img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+                srcset="images/facebook-40x40.png 1x,
+                images/facebook-80x80.png 2x,
+                images/facebook-120x120.png 3x" alt="facebook logo">
+            
+                <img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+                srcset="images/social-media-logo/twitter-40x40.jpg 1x,
+                images/social-media-logo/twitter-80x80.jpg 2x,
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo">
+
+                <img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+                srcset="images/social-media-logo/instagram-40x40.jpg 1x,
+                images/social-media-logo/instagram-80x80.jpg 2x,
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo">
+
+            
 
            
     </main>
