@@ -168,7 +168,7 @@ main h2{
 /*Code relating to the forecast */
 
 .five-day-forecast{
-    display: grid;
+    display: none;
     grid-template-columns: repeat(5, auto);
     align-items: center;
     max-height: 200px;
