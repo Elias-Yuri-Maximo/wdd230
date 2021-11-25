@@ -448,7 +448,15 @@ form fieldset{
 }
 
 
-
+.events{
+    background-color:  rgb(1, 101, 126);
+    text-align: center;
+    color: white;
+    border-bottom: none;
+    padding: 10px;
+    margin-top:10px ;
+    margin-bottom:10px ;
+}
 
 
 
