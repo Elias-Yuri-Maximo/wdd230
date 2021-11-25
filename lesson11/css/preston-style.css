@@ -158,10 +158,13 @@ main h2{
 
 .hero-div{
     position: relative;
+    border: transparent;
+    background-color: transparent;
 }
 
 .hero-image{
     width: 100%;
+
 }
 
 

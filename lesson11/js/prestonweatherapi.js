@@ -23,20 +23,20 @@ fetch(apiURL)
 
     //START WIND CHILL CODE 
 
-    const temp = parseInt(document.querySelector('#temperature').textContent);
-    const windSpeed = parseInt(document.querySelector('#wind-speed').textContent);
+    const temp = parseInt(jsObject.main.temp);
+    const windSpeed = parseInt(jsObject.wind.speed);
 
-
+    
     console.log(temp, windSpeed);
 
 
     if (temp<=50 && windSpeed > 3){
     const windChill = (35.74 +(0.6215 * temp))-(35.75 *Math.pow(windSpeed,0.16))+(0.4275*temp*Math.pow(windSpeed,0.16));
     const wChill = Math.round(windChill);
-    document.getElementById("wind-chill").innerHTML= wChill;
+    document.getElementById("wind-chill").textContent= wChill;
     }else{
-        wChill = '-'
-    document.getElementById("wind-chill").innerHTML= wChill;
+        wChill = 'Not possible to calculate';
+    document.getElementById("wind-chill").textContent = wChill;
     }
     //End windchill code
    
