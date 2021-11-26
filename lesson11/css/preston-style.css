@@ -458,7 +458,9 @@ form fieldset{
     margin-bottom:10px ;
 }
 
-
+.forecast-title{
+    display:none;
+}
 
 
 

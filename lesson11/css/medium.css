@@ -132,6 +132,8 @@
           }
         .home-grid section article img {max-width: 100%; display: block;}
 
+        .forecast-title{display: block;}
+
 
 
 } /*end large */
