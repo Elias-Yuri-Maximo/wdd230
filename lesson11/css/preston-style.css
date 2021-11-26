@@ -25,12 +25,14 @@ header{
     display: flex;
     margin-bottom: 3px;
     background-color: rgb(211, 246, 255);
+    
 }
 
 header figure{margin: 0px;}
 header figure img{
    
     padding: 10px;
+    
     
     border-radius: 100px;
 }
@@ -39,7 +41,7 @@ h1{
 font-family: "montserrat", sans-serif;
 font-style: italic;
 font-weight: 1000;
-font-size: 3em;
+font-size: 2.3em;
 margin: 0px;
 }
 
