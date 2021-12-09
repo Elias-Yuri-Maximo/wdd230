@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html Lang="en-us">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
+        <!--reference the stylesheet-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fish Haven</title>
+        
+        <meta name="description" content="
+        Weather page showing the current weather condition in Fish Haven,
+        which includes a forecast, some current news from the town and suggestions
+        of what to do there.">
+        <!--Write a description for purpouse-->
+
+        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
+        
+        <script defer src="js/preston-script.js"></script>
+        <script defer src="js/fish-haven-event.js"></script>
+        <script defer src="js/fish-haven-weather-api.js"></script>
+
+        <!--script defer src="js/forecast-script.js"></script-->
+        
+        <!--script defer src="js/windchill.js"></script-->
+  
+        <!--reference the script-->
+    </head>
+        
+<body>
+    <header> 
+        
+        <figure class="logo">
+            <img src="images/logo/nimbus-150x150.png"
+            srcset="images/logo/nimbus-150x150.png 1x,
+            images/logo/nimbus-300x300.png 2x,
+            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
+        </figure>
+    
+    <div>
+        <h1>Nimbus Weather News</h1>
+        <h2>Guiding you through cloudy days</h2>
+    </div>
+    
+    
+    </header>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li class="active"><a href="fish-haven.html">Fish Haven</a></li>    
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+               
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Fish Haven</h2>
+
+        <!--HERO IMAGE DIV-->
+        <div class="hero-div">
+            
+            <picture class="hero-image">
+            
+            <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+            <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+            <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+            <img src="images/fish-haven-hero1500.jpg" alt="Picture of a city in Idaho">
+            </picture>
+
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p>Temperature: <span id="temperature"></span>°f</p>
+                <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Currently: <span id="current-condition"></span></p>                
+                <p>Humidity: <span id="humidity"></span>%</p>
+                
+               </section>
+        </div>
+
+ 
+
+
+        <!--FIVE DAY FORECAST-->
+        <h2 class= "forecast-title">Five Day Forecast</h2>
+        <div class="five-day-forecast">
+            <section >
+                <div  class="weekday"><p id="day1">MON</p></div>
+                <div>            
+                    <img id="img1" src="#"
+                    alt="weather symbol">
+                    <p id="temperature1">20°C</p></div>
+            </section>
+                <!--day 1-->
+
+            <section>
+                <div  class="weekday"><p id="day2" >TUE</p></div>
+                <div><img id="img2" src="#"
+                    alt="weather symbol">
+                <p id="temperature2">20°C</p></div>
+            </section>
+
+                <!--day 2-->
+            <section>
+
+                <div class="weekday"><p id="day3">WED</p></div>
+                <div><img id="img3" src="#" 
+                    alt="weather symbol">
+                <p id="temperature3">20°C</p></div>
+            </section>
+
+                <!--day 3-->
+            <section >
+                <div  class="weekday"><p id="day4">THU</p></div>
+                <div><img id="img4" src="#" 
+                    alt="weather symbol">
+                <p id="temperature4">20°C</p></div>
+            </section>
+
+                <!--day 4-->
+            <section>
+                <div  class="weekday"><p id="day5">FRI</p></div>
+                <div><img id="img5" src="#" 
+                    alt="weather symbol">
+                <p id="temperature5">20°C</p> </div>
+            </section>
+                <!--day 5-->
+
+        </div>
+
+        <!---->
+        
+
+
+
+
+        <h2>Article</h2>
+        <div class = "article">
+
+            
+
+            <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+            <p class="credit">Author: Kurt Friednman</p>
+            <figure>
+            <img src="images/fish-haven-article.jpg" alt="Country roads, taking home" sizes="50vw"
+            srcset="images/fish-haven-article200.jpg 200w,
+            images/fish-haven-article500.jpg 500w,
+            images/fish-haven-article800.jpg 800w,
+            images/fish-haven-article1100.jpg 1100w">
+            </figure>
+            <p> &emsp; It's an undiscovered paradise. Most people who drive by recognize the 
+                raw beauty of a place ringed by high desert mountains and bordered by the 
+                shores of a vast natural lake.
+                In winter the hills outside this small paradise echo with the sharp whine of 
+                snow machines and in the summer thousands of tourists ply the lake's bright 
+                blue waters with water skis or fishing poles.
+                
+                <br>
+                &emsp; But they don't live there. It's different living in Fish Haven.
+                The little town sits just on the Idaho side of U.S. Highway 89 tucked
+                in between Bear Lake's west side and the mountains.
+                <br>                
+                &emsp; It's not technically a city or a town, it's really nothing more 
+                than the proverbial wide spot in the road. But people call it a town 
+                even though there isn't a city council, just the Bear Lake County 
+                Commission that oversees development there.
+                Only 50 to 100 people call it home, depending on the weather.
+                <br>
+                &emsp; Vic Tilt, co-owner of Gladys' Place, is one of the few year-around
+                 residents and said the population drops quickly when things get cold.
+                The winter evacuation isn't much of a worry for Tilt, 60, because his
+                 store is the only one around. The nearest other store is in Montpelier,
+                  about 45 minutes away.
+                <br>
+                Source:https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents
+                </p></div>
+
+
+
+                <div class="events" id="fish-haven-event">
+                    <h3>Upcoming Events</h3>
+                    <hr>
+                    
+        
+                </div>
+
+        
+        <div class="contact-information">
+            
+            <img class = "map" src="images/map.png" alt="map of idaho">
+
+            <p> The Weather Site 
+            <br> &#x260E; telephone number: +99 9999 9999
+            <br> &#x2709; e-mail: nimbus@gmail.com
+            <br>
+            
+            <img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+                srcset="images/facebook-40x40.png 1x,
+                images/facebook-80x80.png 2x,
+                images/facebook-120x120.png 3x" alt="facebook logo">
+            
+                <img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+                srcset="images/social-media-logo/twitter-40x40.jpg 1x,
+                images/social-media-logo/twitter-80x80.jpg 2x,
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo">
+
+                <img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+                srcset="images/social-media-logo/instagram-40x40.jpg 1x,
+                images/social-media-logo/instagram-80x80.jpg 2x,
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo">
+
+            
+            
+        </p></div>
+    
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
+        <p><span id="currentdate"></span> </p>    
+    </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>
+        WebFont.load({
+        google:{
+             families:[
+                  'Roboto', 'Montserrat'
+              ]
+          }});
+        
+        
+        </script>
+</body>
+</html>
