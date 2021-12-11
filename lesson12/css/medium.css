@@ -112,12 +112,10 @@
         
         
         
-        .marketing{
-            max-width: 370px;
-        }
+        
 
         .marketing{
-            display: block;
+            display: none;
             border: none;
             background-color: transparent;
             

@@ -1,164 +1,181 @@
 <!DOCTYPE html>
 <html Lang="en-us">
     <head>
-        
+        <!--link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">-->
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/small.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
-        <!--reference the stylesheet-->
+
+
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Storm Center Reports</title>
+        <title>Camp Chamber</title>
+        <meta name="description" content="
+        Chameber of commerce website which gives the opportunity for local 
+        businesses in the city of Campinas to network, collaborate and learn
+        from one another">
         
-        <meta name="description" content="Page dedicated to reporting the latest 
-        weather events in the region of Soda Springs, Preston and  Fish Haven.
-        Offering opportunities for reporting abnormal weather phenomena.">
-        <!--Write a description for purpouse-->
-        
-        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
-        <script defer src="js/preston-script.js"></script>
-        <!--script defer src="js/lazyload.js"></script-->
-        <script defer src="js/validation.js"></script>
-        <!--reference the script-->
+
+        <link rel="shortcut icon" href="images/logo/favicon.ico">
+      
+        <script defer src="js/nav-script.js"></script>
+       
     </head>
 
 <body>
 
 
 
-    <header> 
-        
-        <figure class="logo">
-            <img src="images/logo/nimbus-150x150.png"
-            srcset="images/logo/nimbus-150x150.png 1x,
-            images/logo/nimbus-300x300.png 2x,
-            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
-        </figure>
-    
-    <div>
-        <h1>Nimbus Weather News</h1>
-        <h2>Guiding you through cloudy days</h2>
-    </div>
-    
-    
-    </header>
-    
-    
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide"> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>    
-            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-               
-        </ul>
-    </nav>
-    
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide"> 
 
+            <li><a href="index.html"><img src="images/logo/camp-chamber-logo2.png" alt="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campinas.html">Campinas</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join Us</a></li>    
+            <li><a href="contact-info.html">Contact Information</a></li>
+            
+                                   
+            </ul>
+        </nav>
+
+            <!--HERO IMAGE DIV-->
+            <div class="hero-div">
+            
+                <picture class="hero-image">
+                    
+                <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+                <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+                    <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+                    <img src="images/join-thanks/hero-image-join-1500.jpg" alt="Picture of a city in Campinas">
+                    </picture>
+        
+                    <section class="site-title">
+                        <h1>Join us Today!</h1>
+                        
+        
+                    </section>
+                    </div>
     <main id="storm-main">
-        <h2>Storm Center</h2>
+       
 
         <!--ADD that appears only on larger views-->
         <picture class="marketing">
-            <img src="images/tornado(300).jpg" alt="Picture of a tornado">
+            <img src="images/join-thanks/side-image-300x1500.jpg" alt="Picture of a tornado">
         </picture>
+
+       
+
+        
 
         <!--FORM-->
 
         <form method="get" action="thanks.html" onSubmit="return check_Alpha(this)">
             <fieldset>
                 <legend>Personal Information </legend>
-                <label class="top">Full Name* <input type="text" name="fname" required ></label>
+                <label class="top">First Name* <input type="text" name="fname" required ></label>
+                <label class="top">Last Name* <input type="text" name="fname" required ></label>
+                <label class="top">Title <input type="text" placeholder="My Title" name="title"></label>
+                
                 <label class="top">E-mail* <input type="email" name="email" placeholder="person@gmail.com" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="123555123" required="required"></label>  
+                <label class="top">Phone <input type="tel" name="phone" placeholder="123555123" ></label>  
 
-                <label class="top">Zip Code*<input type="number" name="zip" required></label>
+               
+            
+            
+            
             </fieldset>
     
     
     
             <fieldset class="can-choose">
-                <legend>Storm Information</legend>
-                <!--Date-->
-                <label class="top">Anticipated Completion Date<input type= "date" name="completedDate" ></label>
-
-                <!--Dropdown list-->
+                <legend>Company Information</legend>
+                
+                <label class="top">Company Name* <input type="text" name="cname" required ></label>
+                <label class="top">Company Adress <input type="text" name="cadress" placeholder="203, Geroge Washington Street, Preston Neighboorhood" ></label>
+                <label class="top">Company Website <input type="text" name="cadress" placeholder="www.mycompany.com"></label>
                 <label class="top">
-                Choose a Type of Storm:
-                <input list="type-of-storm" name="type-chosen" /> 
-                </label>
                 
-
-                <datalist id="type-of-storm">
-                    
-                    <option value="flash flood"></option>
-                    <option value="hurricane"></option>
-                    <option value="thunderstorm"></option>
-                    <option value="tornado"></option>
-                    <option value="twister"></option>
-                </datalist>
-
-                <!--Intensity measure-->
-               <div>
-                <label  id="red" class="sbs">Intensity Scale: &nbsp;&nbsp;&nbsp;
-                    <input name="intensity-level" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
                 </label>
-                <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist>
-            </div>
-                
-                <!--Storm Region
-                This according to the video should be accomplished with
-            radio buttons.-->
-            <label class="top">City
-                <select name="city">
-                    <option value="">Please Select &#9662;</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda-springs">Soda Springs</option>
-                    <option value="fish haven">Fish Haven</option>
-                                   
-                </select>
-            </label>
-
-            <!--User in Danger-->
-                <div>Personal Danger
-                <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> Yes</label>
-                <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> Maybe </label>
-                <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> No</label>
-            </div>
+            
                
             </fieldset>
             
             
-    
-            <fieldset><legend>Additional Comments</legend>
-                
-                <label>
-                    <textarea name="comments" placeholder=" Insert your comments here..."></textarea>
-                </label>
+            <section>
+                <h3>Subscription Types</h3>
+
+                <table class="subscriptions">
+                    <tr>
+                        <th></th>
+                      <th>GOLD ($1000)</th>
+                      <th>SILVER ($400)</th>
+                      <TH>BRONZE ($200)</TH>
+                      <th>Non-Profit ($1000)</th>
+                     
+                    </tr>
+                    <tr>
+                      <td>Access to Networking Events</td>
+                      <td>&#9745;</td>
+                      <td>&#9745;</td>
+                      <td>&#9745;</td>
+                      <td>&#9745;</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Company Mentoring</td>
+                      <td>&#9745;</td>
+                      <td>&#9745;</td>
+                      <td>&#9745;</td>
+                      <td>x</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Marketing Campaings</td>
+                        <td>&#9745;</td>
+                        <td>&#9745;</td>
+                        <td>x</td>
+                        <td>x</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>Persoal Coaching</td>
+                        <td>&#9745;</td>
+                        <td>&#9745;</td>
+                        <td>x</td>
+                        <td>x</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>VIP Acces to Business Groups</td>
+                        <td>&#9745;</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        
+                      </tr>
+                  </table> 
+
+            </section>
+            <fieldset><legend>Choose a Subscription</legend>
+
+                <div>
+                    <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> GOLD Subscription</label>
+                    <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> SILVER Subscription</label>
+                    <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> BRONZE Subscription</label>
+                    <label class="sbs"><input type= "radio" name="danger-level" value="in-danger"> Non-Profit Organization</label>
+                </div>
     
             </fieldset>
             
             
-            <input type="submit" value="Report Storm"  class="submitBtn">
+            <input type="submit" value="Subscribe"  class="submitBtn">
     
         </form>
 
@@ -172,18 +189,44 @@
     
     </main>
     <footer>
+        <div class="contact-information">
+            
+         
+
+            <p> The Weather Site 
+            <br> &#x260E; telephone number: +99 9999 9999
+            <br> &#x2709; e-mail: nimbus@gmail.com
+            <br>
+            
+            <a href="https://www.facebook.com/"><img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+                srcset="images/facebook-40x40.png 1x,
+                images/facebook-80x80.png 2x,
+                images/facebook-120x120.png 3x" alt="facebook logo"></a>
+            
+            <a href="https://twitter.com"><img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+                srcset="images/social-media-logo/twitter-40x40.jpg 1x,
+                images/social-media-logo/twitter-80x80.jpg 2x,
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo"></a>
+
+            <a href="https://www.instagram.com/"><img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+                srcset="images/social-media-logo/instagram-40x40.jpg 1x,
+                images/social-media-logo/instagram-80x80.jpg 2x,
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo"></a>
+            </div>
+            <div>
         <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
         <p><span id="currentdate"></span> </p>   
-         
+            </div>
+        
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
+          <script>
         WebFont.load({
         google:{
-            families:[
-                'Roboto', 'Montserrat'
-            ]
-        }});
+             families:[
+                  'Roboto', 'Montserrat'
+              ]
+          }});
         
         
         </script>
