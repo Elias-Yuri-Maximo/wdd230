@@ -48,6 +48,15 @@ h1{
     display: block;
 }
 
+.article img{
+    float: right;
+    max-width: 500px;
+    
+    margin-right: 0px;
+    
+}
+
+
         /**********************************************************************************************************************/
         /**********************************************************************************************************************/
         /**********************************************************************************************************************/
@@ -62,6 +71,12 @@ h1{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
+
+        .campinas-demographic-info{
+            display: grid;
+            grid-template-columns: auto auto;
+            max-width: none;
+            }
 
         .gallery-grid figure:hover {box-shadow: 0 0 50px #333;}
 
@@ -85,8 +100,12 @@ h1{
         .events-information-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin-bottom: 50px;
         }
         
+        .events-information-grid img{
+            max-width: 100%;
+        }
 
 
 

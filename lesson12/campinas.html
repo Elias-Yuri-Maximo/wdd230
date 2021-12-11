@@ -1,231 +1,301 @@
 <!DOCTYPE html>
 <html Lang="en-us">
     <head>
-        
+        <!--link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">-->
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/small.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
-        <!--reference the stylesheet-->
+
+
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Preston</title>
-        
+        <title>Camp Chamber</title>
         <meta name="description" content="
-        Weather page showing the current weather condition in Preston Idaho,
-        which includes a forecast, some current news from the town and suggestions
-        of what to do there.">
-        <!--Write a description for purpouse-->
+        Chameber of commerce website which gives the opportunity for local 
+        businesses in the city of Campinas to network, collaborate and learn
+        from one another">
+        
 
-        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
-
-        <script defer src="js/preston-event.js"></script>
+        <link rel="shortcut icon" href="images/logo/favicon.ico">
+      
         <script defer src="js/preston-script.js"></script>
-        <script defer src="js/prestonweatherapi.js"></script>
-
-        <!--script defer src="js/forecast-script.js"></script-->
-        
-        <!--script defer src="js/windchill.js"></script-->
-  
-        <!--reference the script-->
+        <script defer src="js/home-weather-summary.js"></script>
     </head>
-        
+ 
 <body>
 
-    <div class="pancake" id="pancake"><p>Saturday = Preston Pancakes in the Park!  
-        9:00 a.m. Saturday at the city park pavilion.</p></div>
+    
 
+  
+    
+    
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide"> 
 
-    <header> 
-        
-        <figure class="logo">
-            <img src="images/logo/nimbus-150x150.png"
-            srcset="images/logo/nimbus-150x150.png 1x,
-            images/logo/nimbus-300x300.png 2x,
-            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
-        </figure>
-    
-    <div>
-        <h1>Nimbus Weather News</h1>
-        <h2>Guiding you through cloudy days</h2>
-    </div>
-    
-    
-    </header>
-    
-    
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide"> 
+            <li><a href="index.html"><img src="images/logo/camp-chamber-logo2.png" alt="logo"></a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>    
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-               
-        </ul>
-    </nav>
+            <li class="active"><a href="campinas.html">Campinas</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>    
+            <li><a href="contact-info.html">Contact Information</a></li>
+            
+                                   
+            </ul>
+        </nav>
 
+        
+
+            <!--HERO IMAGE DIV-->
+            <div class="hero-div">
+            
+                <picture class="hero-image">
+                    
+                <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+                <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+                    <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+                    <img src="images/campinas/hero-campinas1200.jpg" alt="Picture of a city in Campinas">
+                    </picture>
+        
+                    <section class="site-title">
+                        <h1>Welcome to Campinas</h1>
+                        <h2>Labore Virtute Civita Floret</h2>
+        
+                    </section>
+                    </div>
 
     <main>
-        <h2>Preston Idaho</h2>
-
-        <!--HERO IMAGE DIV-->
-        <div class="hero-div">
-            
-            <picture class="hero-image">
-            
-            <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
-            <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
-            <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
-            <img src="images/idaho-city-1200x675.jpg" alt="Picture of a city in Idaho">
-            </picture>
-
-            <section class="weather-summary">
-                <h2>Weather Summary</h2>
-                <p>Temperature: <span id="temperature"></span>°f</p>
-                <p>Wind Speed: <span id="wind-speed"></span>mph</p>
-                <p>Wind Chill: <span id="wind-chill"></span></p>
-                <p>Currently: <span id="current-condition"></span></p>                
-                <p>Humidity: <span id="humidity"></span>%</p>
-                
-               </section>
-        </div>
-
-
-        <!--FIVE DAY FORECAST-->
-        <h2 class= "forecast-title">Five Day Forecast</h2>
-        <div class="five-day-forecast">
-            <section >
-                <div  class="weekday"><p id="day1">MON</p></div>
-                <div>            
-                    <img id="img1" src="#"
-                    alt="weather symbol">
-                    <p id="temperature1">20°C</p></div>
-            </section>
-                <!--day 1-->
-
-            <section>
-                <div  class="weekday"><p id="day2" >TUE</p></div>
-                <div><img id="img2" src="#"
-                    alt="weather symboln">
-                <p id="temperature2">20°C</p></div>
-            </section>
-
-                <!--day 2-->
-            <section>
-
-                <div class="weekday"><p id="day3">WED</p></div>
-                <div><img id="img3" src="#" 
-                    alt="weather symbol">
-                <p id="temperature3">20°C</p></div>
-            </section>
-
-                <!--day 3-->
-            <section >
-                <div  class="weekday"><p id="day4">THU</p></div>
-                <div><img id="img4" src="#" 
-                    alt="weather symbol">
-                <p id="temperature4">20°C</p></div>
-            </section>
-
-                <!--day 4-->
-            <section>
-                <div  class="weekday"><p id="day5">FRI</p></div>
-                <div><img id="img5" src="#" 
-                    alt="weather symbol">
-                <p id="temperature5">20°C</p> </div>
-            </section>
-                <!--day 5-->
-
-        </div>
-
-
-
-
-        <h2>Article</h2>
+        <h2>Campinas, A History of Entrepreneurship !</h2>
         <div class = "article">
 
             
 
-            <h3>Teens playing with fireworks started Boise Foothills Fire, ACSO says</h3>
-            <p class="credit">Author: KTVB Staff</p>
+            
             <figure>
-            <img src="images/wildfire-original.jpg" alt="Burnt trees and grass" sizes="50vw"
-            srcset="images/wildfire200.jpg 200w,
+            <img src="images/campinas/vintage-600x400.jpg" alt="Burnt trees and grass"> <!--sizes="50vw"-->
+>            <!--srcset="images/wildfire200.jpg 200w,
             images/wildfire500.jpg 500w,
             images/wildfire800.jpg 800w,
-            images/wildfire-original.jpg 1100w">
+            images/wildfire-original.jpg 1100w"-->
             </figure>
-            <p> &emsp; On Wednesday, Oct. 6, the Goose Fire burned more than 425 acres 
-                in the Boise Foothills. Soon after, investigators from the Ada 
-                County Sheriff's Office found the blaze was started by fireworks. 
+            <p> &emsp; The city was founded on July 14, 1774, 
+                by Barreto Leme. It was initially a simple
+                 outpost on the way to Minas Gerais and Goiás 
+                 serving the "Bandeirantes" who were in search 
+                 of precious minerals and Indian slaves. In the
+                  first half of the 19th century, Campinas 
+                  became a growing population center, with many
+                   coffee, cotton and sugarcane farms.  
                 <br>
-                &emsp; Now, the Eagle Fire Department Fire Chief told KTVB on Thursday 
-                that the fire was started after a group of juveniles played with 
-                fireworks north of the Eagle Bike Park in the Boise Foothills. 
-                The fire was started in unincorporated Ada County.
+                &emsp; The construction of a railway linking the city
+                 of São Paulo to Santos' seaport, in 1867, was very 
+                 important for its growth. In the second half of the 
+                 19th century, with the abolition of slavery, farming 
+                 and industrialization attracted many foreign immigrants 
+                 to replace the lost manpower, mainly from Italy.
                 <br>                
-                &emsp; According to the Ada County Sheriff's Office, four teens were 
-                identified as being responsible for the fire. The teens, a 15-year-old
-                 girl, a 15-year-old boy and two 16-year-old boys, were lighting off
-                aerial fireworks at about 4:30 p.m. Wednesday near a trail by the
-                Eagle Bike Park.
+                &emsp; Coffee became an important export and the city
+                 became wealthy. In consequence, a large service sector 
+                 was established to serve the growing population, and 
+                 in the first decades of the 20th century, Campinas 
+                 could already boast of an opera house, theaters, 
+                 banks, movie theaters, radio stations, a 
+                 philharmonic orchestra, two newspapers 
+                 (Correio Popular and Diário do Povo), a 
+                 good public education system (with the Escola 
+                 Normal de Campinas and the Colégio Culto à
+                  Ciência), and hospitals, such as the Santa Casa 
+                  de Misericórdia (a charity for poor people). 
                 <br>
-                &emsp; Officials added that a man in the area saw the teens and told them to stop and leave.
-                The Ada County Sheriff's Office said in a press release that the teens later moved
-                towards Goose Creek Road and lit off more fireworks, which sparked the Goose Fire.
-                The teens then ran off without trying to put out the grass fire.
-                <br>
-                Source:https://www.ktvb.com/article/news/local/wildfire/acso-goose-fire-boise-foothills-was-started-kids-playing-with-fireworks-juveniles/277-e5ee136f-a087-4355-ad2d-5001f40f7ffe
+                &emsp;And the Casa de Saúde de Campinas (for the Italian 
+                community, formerly known as Circolo Italiani Uniti), 
+                and the most important Brazilian research center in 
+                agricultural sciences, the Instituto Agronômico de 
+                Campinas, which was founded by Emperor Pedro II. 
+                Finally, the construction of the first Brazilian highway
+                 in 1938, between Campinas and São Paulo, the Anhanguera 
+                 Highway, was a turning point in the integration of Campinas 
+                 into the rest of the state.  
                 </p></div>
 
-            <div class="events" id="preston-event">
-               <h3>Upcoming Events</h3>
-               <hr>
-                    
-        
+       <hr>
+
+        <h2>Our Next Events</h2>
+                <!--GALERY GRID-->
+                <div class="gallery-grid">
+                    <!--IMAGE BLUE-CLOUD-->
+                <figure>
+                
+                    <!--source media="(max-width:300px)" srcset="images/blue-cloud-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/blue-cloud-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/blue-cloud-1200x800.jpg"-->
+                    <img src="images/campinas/park1-600x400.jpg" alt="Park at sunrise">
+                    <h4>Taquaral Park Picknick</h4>
+                    <p>General Picknick at the taquaral Park <br>
+                    Saturday Dec 11th 16:00</p>
+                </figure>
+    
+                    <!--IMAGE RAINBOW-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/rainbow-over-lake-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/rainbow-over-lake-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/rainbow-over-lake-1200x800.jpg"-->
+                    <img src="images/campinas/park2-600x400.jpg" alt="Fount with flowers around it">
+                    <h4>Flower Festival</h4>
+                    <p>At Boca do Leão Park <br>
+                    Saturday Dec 18th 17:00</p>
+                </figure>
+    
+                    <!--IMAGE BUS SNOW-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/bus-snow-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/bus-snow-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/bus-snow-1200x800.jpg.jpg"-->
+                    <img src="images/campinas/restaurant1-600x400.jpg" alt="Empty chairs at reastaurant">
+                    <h4>Gastronomical Contest</h4>
+                    <p>At the Madero Restaurant <br>
+                    Saturday Dec 18th 20:00</p>
+                </figure>
+    
+                    <!--IMAGE-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/dark-ligtning-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/dark-ligtning-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/dark-ligtning-1200x800.jpg.jpg"-->
+                    <img src="images/campinas/restaurant2-600x400.jpg" alt="People eating hamburgers">
+                    <h4>Fit Burger Contest</h4>
+                    <p>At the Bronco Burger Restaurant <br>
+                    Friday Dec 17th 19:00</p>
+                </figure>
+    
+                    <!--IMAGE-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/orange-cloud-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/orange-cloud-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/orange-cloud-1200x800.jpg.jpg"-->
+                    <img src="images/campinas/stadium-600x400.jpg" alt="Stadium">
+                    <h4>Ponte Preta Soccer Match</h4>
+                    <p>At the Moses Lucarelli Stadium <br>
+                    Saturday Dec 18th 15:00</p>
+                </figure>
+    
+                    <!--IMAGE-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/orange-storm-cloud-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/orange-storm-cloud-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/orange-storm-cloud-1200x800.jpg.jpg"-->
+                    <img src="images/campinas/zoo-600x400.jpg" alt="Animals in a Zoo">
+                    <h4>Jequitibás Zoo Tour with João da Souza</h4>
+                    <p>At Jequitibás Zoo <br>
+                    Saturday Dec 18th 8:00</p>
+                </figure>
             </div>
 
+       
+
+            <section class="campinas-demographic-info">
+            <div> 
+               
+                <h2>Demographic Information</h2>
+                <br>
+                <p>Population: 1,213,792
+                    <br>
+                14th most populous City in Brazil
+                    <br>
+                Area: 797,6 km²
+                    <br>
+            </p>
+
+            <table>
+                <tr>
+                  <th>Ethnicity</th>
+                  <th>Percentage</th>
+                 
+                </tr>
+                <tr>
+                  <td>White</td>
+                  <td>66.33%</td>
+                  
+                </tr>
+                <tr>
+                  <td>Pardo</td>
+                  <td>25.42%</td>
+                  
+                </tr>
+                <tr>
+                    <td>Black</td>
+                    <td>6.91%</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Asian</td>
+                    <td>1,23%</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Indigenous</td>
+                    <td>0.01%</td>
+                    
+                  </tr>
+              </table> 
+              <br>
+            </div>
+
+              <img src="images/campinas/carnaval-600x400.jpg" alt="Man at Carnival playing Trumpet">
+
+                
+
+            </section>
+
+
+       
+
+
+
+
+       
+
 
 
         
+        
+    
+    
+    </main>
+    <footer>
         <div class="contact-information">
             
-            <img class = "map" src="images/map.png" alt="map of idaho">
+         
 
             <p> The Weather Site 
             <br> &#x260E; telephone number: +99 9999 9999
             <br> &#x2709; e-mail: nimbus@gmail.com
             <br>
             
-            <img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+            <a href="https://www.facebook.com/"><img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
                 srcset="images/facebook-40x40.png 1x,
                 images/facebook-80x80.png 2x,
-                images/facebook-120x120.png 3x" alt="facebook logo">
+                images/facebook-120x120.png 3x" alt="facebook logo"></a>
             
-                <img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+            <a href="https://twitter.com"><img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
                 srcset="images/social-media-logo/twitter-40x40.jpg 1x,
                 images/social-media-logo/twitter-80x80.jpg 2x,
-                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo">
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo"></a>
 
-                <img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+            <a href="https://www.instagram.com/"><img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
                 srcset="images/social-media-logo/instagram-40x40.jpg 1x,
                 images/social-media-logo/instagram-80x80.jpg 2x,
-                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo">
-
-            
-            
-        </p></div>
-    
-    
-    </main>
-    <footer>
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo"></a>
+            </div>
+            <div>
         <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
-        <p><span id="currentdate"></span> </p>    
+        <p><span id="currentdate"></span> </p>   
+            </div>
+        
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
           <script>

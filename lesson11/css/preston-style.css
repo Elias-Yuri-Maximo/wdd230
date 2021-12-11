@@ -289,9 +289,7 @@ a{
 
 
 
-.gallery-grid figure img[data-src] {
-    filter: blur(0.8em);
-  }
+
 
 .gallery-grid figure img{
     margin: 0%;

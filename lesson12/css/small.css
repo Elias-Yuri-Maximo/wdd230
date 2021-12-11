@@ -11,6 +11,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*CSS RELATED TO THE HEADER*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+img{
+    max-width: 100%;
+}
+body{
+    background-color: black;
+}
+main{
+ padding: 10px;
+    background-color: white;
+}
 
 .pancake{
     
@@ -172,7 +182,7 @@ background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
     margin-bottom:50px;
     background-color: rgb(194, 191, 191);
     padding: 15px;
-    border-radius: 10%;
+    border-radius: 10px;
     
 
     
@@ -272,12 +282,12 @@ div section div{
 }
 
 .weather-summary{
-    background-color: black;
+    background-color: #232c33;
     color: white;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    border-radius: 10% ;
+    border-radius: 10px ;
 
 }
 
@@ -319,7 +329,31 @@ div section div{
 .article img{
     float: right;
     max-width: 500px;
-    margin:3px;
+    
+    margin-right: -10px;
+    
+}
+
+.campinas-demographic-info{
+    background-color: #141415;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+   
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campinas-demographic-info table{
+    font-family:"roboto", sans-serif;
+    background-color: #232c33;
+    border:1px solid white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -358,7 +392,7 @@ a{
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
-/*CSS RELATED TO THE GALERY ONLY*
+/*CSS RELATED TO THE GALERY ONLY*/
 
 .gallery-grid{
     display: grid;
@@ -388,8 +422,16 @@ a{
     margin: 0%;
     padding: 0%;
     filter: blur(0em);
-    transition: filter 0.9s;
+    transition: 0.9s;
 }
+
+
+
+
+
+
+
+
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
