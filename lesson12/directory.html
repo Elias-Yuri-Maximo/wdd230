@@ -1,130 +1,82 @@
 <!DOCTYPE html>
 <html Lang="en-us">
     <head>
-        
+        <!--link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">-->
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/small.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
-        <!--reference the stylesheet-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gallery</title>
+        <title>Camp Chamber</title>
+        <meta name="description" content="
+        Directory containing the hte collaborators of camp Chamber, 
+        the campinisean chambers of commerce. Here you will find their
+        names and information to get in contact with them.">
         
-        <meta name="description" content="Page dedicated to showing the latest 
-        weather events in the region of Soda Springs, Preston and  Fish Haven.
-        Offering the best coverage of the latest storms, snow storms and weather 
-        in general.">
-        <!--Write a description for purpouse-->
 
-        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
-        <script defer src="js/preston-script.js"></script>
-        <script defer src="js/lazyload.js"></script>
-        <script defer src="js/visit-storage.js"></script>
-        <!--reference the script-->
+        <link rel="shortcut icon" href="images/logo/favicon.ico">
+      
+        <script defer src="js/nav-script.js"></script>
+        <script defer src="js/populate-directory.js"></script>
+        <script defer src="js/layoutButtons.js"></script>       
     </head>
 
 <body>
 
 
 
-    <header> 
-        
-        <figure class="logo">
-            <img src="images/logo/nimbus-150x150.png"
-            srcset="images/logo/nimbus-150x150.png 1x,
-            images/logo/nimbus-300x300.png 2x,
-            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
-        </figure>
+   
     
-    <div>
-        <h1>Nimbus Weather News</h1>
-        <h2>Guiding you through cloudy days</h2>
-    </div>
-    
-    
-    </header>
-    
-    
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide"> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>    
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>
-               
-        </ul>
-    </nav>
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide"> 
 
+            <li><a href="index.html"><img src="images/logo/camp-chamber-logo2.png" alt="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campinas.html">Campinas</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li ><a href="join.html">Join Us</a></li>    
+            <li><a href="contact-info.html">Contact Information</a></li>
+            
+                                   
+            </ul>
+        </nav>
+
+            <!--HERO IMAGE DIV-->
+            <div class="hero-div">
+            
+                <picture class="hero-image">
+                    
+                <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+                <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+                    <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+                    <img src="images/directory/hero-image1500.jpg" alt="Picture of a city in Campinas">
+                    </picture>
+        
+                    <section class="site-title">
+                        <h1>Meet our Main collaborators</h1>
+                        
+        
+                    </section>
+                    </div>
 
     <main>
-        <h2>Weather Gallery </h2>
-
-
+        <div id="btnContainer">
+            <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+            <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+          </div>
+        
         <!--GALERY GRID-->
-        <div class="gallery-grid">
-                <!--IMAGE BLUE-CLOUD-->
-            <figure>
-            
-                <!--source media="(max-width:300px)" srcset="images/blue-cloud-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/blue-cloud-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/blue-cloud-1200x800.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/blue-cloud-600x400.jpg" alt="blue-cloud">
-                <p>A cloud in the a blue sky</p>
-            </figure>
+        <div class="gallery-grid directory-grid">
+          
 
-                <!--IMAGE RAINBOW-->
-            <figure>
-                <!--source media="(max-width:300px)" srcset="images/rainbow-over-lake-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/rainbow-over-lake-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/rainbow-over-lake-1200x800.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/rainbow-over-lake-600x400.jpg" alt="Rainbow over lake">
-                <p>A rainbow at lake Idaho in Preston</p>
-            </figure>
-
-                <!--IMAGE BUS SNOW-->
-            <figure>
-                <!--source media="(max-width:300px)" srcset="images/bus-snow-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/bus-snow-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/bus-snow-1200x800.jpg.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/bus-snow-600x400.jpg" alt="bus-snow">
-                <p>A Bus in fish haven during a winter day</p>
-            </figure>
-
-                <!--IMAGE-->
-            <figure>
-                <!--source media="(max-width:300px)" srcset="images/dark-ligtning-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/dark-ligtning-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/dark-ligtning-1200x800.jpg.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/dark-ligtning-600x400.jpg" alt="dark-ligtning">
-                <p>A lightning striking a forest</p>
-            </figure>
-
-                <!--IMAGE-->
-            <figure>
-                <!--source media="(max-width:300px)" srcset="images/orange-cloud-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/orange-cloud-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/orange-cloud-1200x800.jpg.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/orange-cloud-600x400.jpg" alt="orange-cloud">
-                <p>Cloud picture from Soda Springs</p>
-            </figure>
-
-                <!--IMAGE-->
-            <figure>
-                <!--source media="(max-width:300px)" srcset="images/orange-storm-cloud-300x200.jpg">
-                <source media="(max-width:600px)" srcset="images/orange-storm-cloud-600x400.jpg">
-                <source media="(max-width:1200px)" srcset="images/orange-storm-cloud-1200x800.jpg.jpg"-->
-                <img src="images/placeholder600x400.png" data-src="images/orange-storm-cloud-1200x800.jpg" alt="orange-storm-cloud">
-                <p>A cumulus nibus registered in Preston</p>
-            </figure>
         </div>
-                
-
     
     
     </main>

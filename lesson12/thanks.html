@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html Lang="en-us">
     <head>
-        
+        <!--link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">-->
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/small.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
-        <!--reference the stylesheet-->
+
+
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thank You</title>
+        <title>Camp Chamber</title>
+        <meta name="description" content="
+        Join our amazing subscription in order to get the amazing 
+        services we have to offer! Just by filling the Information
+        down below.">
         
-        <meta name="description" content="Page dedicated to thanking the user 
-        for having collaborated in reporting hazardous weather conditions in
-        the southern Idaho refion.">
-        <!--Write a description for purpouse-->
 
-        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
-        <script defer src="js/preston-script.js"></script>
-        <script defer src="js/lazyload.js"></script>
-        <script defer src="js/visit-storage.js"></script>
-        <!--reference the script-->
+        <link rel="shortcut icon" href="images/logo/favicon.ico">
+      
+        <script defer src="js/nav-script.js"></script>
+       
     </head>
 
 <body>
-
-
-
-    <header> 
+            <!-- NAVIGATION HERE -->
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide"> 
+    
+                <li><a href="index.html"><img src="images/logo/camp-chamber-logo2.png" alt="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campinas.html">Campinas</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>    
+                <li><a href="contact-info.html">Contact Information</a></li>
+                
+                                       
+                </ul>
+            </nav>
+    
+    
+               <!--HERO IMAGE DIV-->
+               <div class="hero-div">
+            
+                <picture class="hero-image">
+                    
+                <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+                <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+                    <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+                    <img src="images/join-thanks/hero-image-join-1500.jpg" alt="Picture of a city in Campinas">
+                    </picture>
         
-        <figure class="logo">
-            <img src="images/logo/nimbus-150x150.png"
-            srcset="images/logo/nimbus-150x150.png 1x,
-            images/logo/nimbus-300x300.png 2x,
-            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
-        </figure>
-    
-    <div>
-        <h1>Nimbus Weather News</h1>
-        <h2>Guiding you through cloudy days</h2>
-    </div>
-    
-    
-    </header>
-    
-    
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide"> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>    
-            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-               
-        </ul>
-    </nav>
-
-
-    <main>
-        <h2>Your Report Was Successfully Sent.</h2>
-        <!--FORM-->
+                    <section class="site-title">
+                        <h1>Thank You For Joining us!</h1>
+                        
+                    <a href="index.html"><button class="button">Return to Main Menu</button></a>
+                    </section>
+                    </div>
 
  
-                
-
-    
-    
-    </main>
     <footer>
+        <div class="contact-information">
+            
+         
+
+            <p> The Weather Site 
+            <br> &#x260E; telephone number: +99 9999 9999
+            <br> &#x2709; e-mail: nimbus@gmail.com
+            <br>
+            
+            <a href="https://www.facebook.com/"><img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+                srcset="images/facebook-40x40.png 1x,
+                images/facebook-80x80.png 2x,
+                images/facebook-120x120.png 3x" alt="facebook logo"></a>
+            
+            <a href="https://twitter.com"><img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+                srcset="images/social-media-logo/twitter-40x40.jpg 1x,
+                images/social-media-logo/twitter-80x80.jpg 2x,
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo"></a>
+
+            <a href="https://www.instagram.com/"><img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+                srcset="images/social-media-logo/instagram-40x40.jpg 1x,
+                images/social-media-logo/instagram-80x80.jpg 2x,
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo"></a>
+            </div>
+            <div>
         <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
         <p><span id="currentdate"></span> </p>   
-        <p>Days since last visit: <span id="date-difference">result</span></p> 
+            </div>
+        
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
+          <script>
         WebFont.load({
         google:{
-            families:[
-                'Roboto', 'Montserrat'
-            ]
-        }});
+             families:[
+                  'Roboto', 'Montserrat'
+              ]
+          }});
         
         
         </script>

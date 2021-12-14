@@ -1,0 +1,67 @@
+{
+"companies":[
+
+{
+    "name": "Biblioteca Pasquale",
+    "imageName": "biblioteca-pasquale.png",
+    "telephone":"+56 3445 5656",
+    "motto":"Reading is Magical and we are the Wizards",
+    "email":"livraria-pasquale@gmail.com"
+
+
+},
+{
+    "name": "Brasa Viva",
+    "imageName": "brasa-viva.png",
+    "telephone":"+54 5345 8587",
+    "motto":"Barbecue and Rock'n Roll",
+    "email":"brasa-viva@gmail.com"
+
+},
+{
+    "name": "Centro Fitness",
+    "imageName": "centro-fitness.png",
+    "telephone":"+53 3456 4577",
+    "motto":"You fit in here",
+    "email":"centro-fitness@gmail.com"
+
+},
+{
+    "name": "Hospital Geral do Vale",
+    "imageName": "hospital-geral-do-vale.png",
+    "telephone":"+55 5678 5673",
+    "motto":"An apple a day keeps you away from us",
+    "email":"hospital-geral-do-vale@gmail.com"
+
+},
+{
+    "name": "Naturalis Fitoterapia",
+    "imageName": "naturalis-fitoterapia.png",
+    "telephone":"+56 3445 5656",
+    "motto":"Treating everithing with plants",
+    "email":"company@gmail.com"
+
+},
+{
+    "name": "Percepção Sonora",
+    "imageName": "percepcao-sonora.png",
+    "telephone":"+34 5436 3456",
+    "motto":"We help you to be loud!",
+    "email":"percepcao-sonora.com"
+
+},
+{
+    "name": "Vera Virtual",
+    "imageName": "vera-virtual.png",
+    "telephone":"+25 2345 5677",
+    "motto":"Helping you through tough times",
+    "email":"vera-virtual@gmail.com"
+
+}
+
+
+
+
+
+
+]}

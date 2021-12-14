@@ -63,7 +63,7 @@ fetch(apiURL)
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+    console.log(jsObject);
 
 
     const sixForecast = jsObject.list.filter( x => x.dt_txt.includes("18:00:00"));

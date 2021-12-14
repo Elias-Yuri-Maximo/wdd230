@@ -567,6 +567,30 @@ form fieldset{
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
+
+#btnContainer{
+    margin: 10px;
+}
+
+#btnContainer button{
+    border: none;
+    padding: 10px;
+    background-color: #232c33;
+    color: white;
+}
+#btnContainer button:hover{
+    background-color: #777;
+}
+
+.directory-grid h4{
+    padding: 0%;
+    margin-top: 10px;
+    margin: 10px;
+}
+.directory p{
+    padding: 0%;
+    margin: 10px;
+}
 /*HOME CSS
 .home-grid * {padding: .35rem;}
 .home-grid h2 {text-align:center;}
