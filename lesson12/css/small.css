@@ -503,10 +503,12 @@ form fieldset{
  
     form label.top input:required{
         border-left:#9c2c13 solid 6px;
+        border-top: #9c2c13 solid 6px;
     }
 
     form label.top input:required:valid{
         border-left: green solid 6px;
+        border-top: green solid 6px;
     }
 
     textarea{
