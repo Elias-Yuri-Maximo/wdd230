@@ -587,7 +587,7 @@ form fieldset{
     margin-top: 10px;
     margin: 10px;
 }
-.directory p{
+.directory-grid p{
     padding: 0%;
     margin: 10px;
 }
@@ -646,8 +646,35 @@ form fieldset{
 .forecast-title{
     display:none;
 }
+*/
 
+.contact-info-main form label.top input:required{
+    border-top:#9c2c13 solid 6px;
+}
 
+.contact-info-main form label.top input:required:valid{
+    border-top: green solid 6px;
+}
+
+.three-main-directors figure img{
+    border-radius: 100%;
+}
+.three-main-directors figure{
+    padding: 30px;
+}
+.board-of-directors .gallery-grid figure:hover{box-shadow: none}
+
+.elias-grid{
+    padding: 10px;
+}
+
+.elias-grid .content{
+    padding: 10px;
+}
+
+.elias-grid img{
+    border-radius: 60px;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -656,5 +683,10 @@ form fieldset{
     clear: both;
   }
 
+.map-section{
+    display: flex;
+    border: solid 1px #999;
+    padding: 4px;
+}
 
 

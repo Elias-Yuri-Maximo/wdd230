@@ -142,6 +142,11 @@
 
         .forecast-title{display: block;}
 
+        .elias-grid{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
 
 
 } /*end large */

@@ -86,9 +86,16 @@ fetch(requestURL)
 
 
 
-            let contactInfo = document.createElement('p');
-            contactInfo.innerHTML = company.telephone +"<br>"+company.email;
-            card.appendChild(contactInfo);
+            let telephone = document.createElement('p');
+            telephone.innerHTML = company.telephone;
+            card.appendChild(telephone);
+            //Telephone
+
+
+            //E-mail
+            let email = document.createElement('p');
+            email.innerHTML = company.email;
+            card.appendChild(email);
 
 
 

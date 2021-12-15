@@ -1,235 +1,221 @@
 <!DOCTYPE html>
 <html Lang="en-us">
     <head>
-        
+        <!--link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">-->
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="css/preston-style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/small.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/large.css" media="screen" />
-        <!--reference the stylesheet-->
+
+
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fish Haven</title>
-        
+        <title>Get in contact with us </title>
         <meta name="description" content="
-        Weather page showing the current weather condition in Fish Haven,
-        which includes a forecast, some current news from the town and suggestions
-        of what to do there.">
-        <!--Write a description for purpouse-->
-
-        <link rel="shortcut icon" href="images/nimbus-favicon.ico">
+        Page to get in touch with the Camp chamber of commerce,
+        write questions, check our contact information and check
+        the location of or nearest office">
         
-        <script defer src="js/preston-script.js"></script>
-        <script defer src="js/fish-haven-event.js"></script>
-        <script defer src="js/fish-haven-weather-api.js"></script>
 
-        <!--script defer src="js/forecast-script.js"></script-->
-        
-        <!--script defer src="js/windchill.js"></script-->
-  
-        <!--reference the script-->
+        <link rel="shortcut icon" href="images/logo/favicon.ico">
+      
+        <script defer src="js/nav-script.js"></script>
+       
     </head>
-        
-<body>
-    <header> 
-        
-        <figure class="logo">
-            <img src="images/logo/nimbus-150x150.png"
-            srcset="images/logo/nimbus-150x150.png 1x,
-            images/logo/nimbus-300x300.png 2x,
-            images/logo/nimbus-450x450.png 3x" alt="nimbus logo">
-        </figure>
-    
-    <div>
-        <h1>Nimbus Weather News</h1>
-        <h2>Guiding you through cloudy days</h2>
-    </div>
-    
-    
-    </header>
-    
-    
-    <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide"> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li class="active"><a href="fish-haven.html">Fish Haven</a></li>    
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-               
-        </ul>
-    </nav>
-
-
-    <main>
-        <h2>Fish Haven</h2>
-
-        <!--HERO IMAGE DIV-->
-        <div class="hero-div">
-            
-            <picture class="hero-image">
-            
-            <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
-            <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
-            <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
-            <img src="images/fish-haven-hero1500.jpg" alt="Picture of a city in Idaho">
-            </picture>
-
-            <section class="weather-summary">
-                <h2>Weather Summary</h2>
-                <p>Temperature: <span id="temperature"></span>°f</p>
-                <p>Wind Speed: <span id="wind-speed"></span>mph</p>
-                <p>Wind Chill: <span id="wind-chill"></span></p>
-                <p>Currently: <span id="current-condition"></span></p>                
-                <p>Humidity: <span id="humidity"></span>%</p>
-                
-               </section>
-        </div>
-
  
+<body>
 
+    
 
-        <!--FIVE DAY FORECAST-->
-        <h2 class= "forecast-title">Five Day Forecast</h2>
-        <div class="five-day-forecast">
-            <section >
-                <div  class="weekday"><p id="day1">MON</p></div>
-                <div>            
-                    <img id="img1" src="#"
-                    alt="weather symbol">
-                    <p id="temperature1">20°C</p></div>
-            </section>
-                <!--day 1-->
+  
+    
+    
+        <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide"> 
 
-            <section>
-                <div  class="weekday"><p id="day2" >TUE</p></div>
-                <div><img id="img2" src="#"
-                    alt="weather symbol">
-                <p id="temperature2">20°C</p></div>
-            </section>
-
-                <!--day 2-->
-            <section>
-
-                <div class="weekday"><p id="day3">WED</p></div>
-                <div><img id="img3" src="#" 
-                    alt="weather symbol">
-                <p id="temperature3">20°C</p></div>
-            </section>
-
-                <!--day 3-->
-            <section >
-                <div  class="weekday"><p id="day4">THU</p></div>
-                <div><img id="img4" src="#" 
-                    alt="weather symbol">
-                <p id="temperature4">20°C</p></div>
-            </section>
-
-                <!--day 4-->
-            <section>
-                <div  class="weekday"><p id="day5">FRI</p></div>
-                <div><img id="img5" src="#" 
-                    alt="weather symbol">
-                <p id="temperature5">20°C</p> </div>
-            </section>
-                <!--day 5-->
-
-        </div>
-
-        <!---->
-        
-
-
-
-
-        <h2>Article</h2>
-        <div class = "article">
-
+            <li><a href="index.html"><img src="images/logo/camp-chamber-logo2.png" alt="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="campinas.html">Campinas</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>    
+            <li class="active"><a href="contact-info.html">Contact Information</a></li>
             
+                                   
+            </ul>
+        </nav>
 
-            <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
-            <p class="credit">Author: Kurt Friednman</p>
-            <figure>
-            <img src="images/fish-haven-article.jpg" alt="Country roads, taking home" sizes="50vw"
-            srcset="images/fish-haven-article200.jpg 200w,
-            images/fish-haven-article500.jpg 500w,
-            images/fish-haven-article800.jpg 800w,
-            images/fish-haven-article1100.jpg 1100w">
-            </figure>
-            <p> &emsp; It's an undiscovered paradise. Most people who drive by recognize the 
-                raw beauty of a place ringed by high desert mountains and bordered by the 
-                shores of a vast natural lake.
-                In winter the hills outside this small paradise echo with the sharp whine of 
-                snow machines and in the summer thousands of tourists ply the lake's bright 
-                blue waters with water skis or fishing poles.
-                
-                <br>
-                &emsp; But they don't live there. It's different living in Fish Haven.
-                The little town sits just on the Idaho side of U.S. Highway 89 tucked
-                in between Bear Lake's west side and the mountains.
-                <br>                
-                &emsp; It's not technically a city or a town, it's really nothing more 
-                than the proverbial wide spot in the road. But people call it a town 
-                even though there isn't a city council, just the Bear Lake County 
-                Commission that oversees development there.
-                Only 50 to 100 people call it home, depending on the weather.
-                <br>
-                &emsp; Vic Tilt, co-owner of Gladys' Place, is one of the few year-around
-                 residents and said the population drops quickly when things get cold.
-                The winter evacuation isn't much of a worry for Tilt, 60, because his
-                 store is the only one around. The nearest other store is in Montpelier,
-                  about 45 minutes away.
-                <br>
-                Source:https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents
-                </p></div>
+        
 
-
-
-                <div class="events" id="fish-haven-event">
-                    <h3>Upcoming Events</h3>
-                    <hr>
+            <!--HERO IMAGE DIV-->
+            <div class="hero-div">
+            
+                <picture class="hero-image">
                     
+                <!--source media="(max-width:200px)" srcset="images/hero-image200.jpeg">
+                <source media="(max-width:500px)" srcset="images/hero-image500.jpeg">
+                    <source media="(max-width:800px)" srcset="images/hero-image800.jpeg"-->
+                    <img src="images/contact-us/contact-hero-image.jpg" alt="Picture of a city in Campinas">
+                    </picture>
         
-                </div>
+                    <section class="site-title">
+                        <h1>Connect With Us!</h1>
+                        <h2>Feel free to send us any questions!</h2>
+                        
+        
+                    </section>
+                    </div>
+
+                
+            
+    <main class="contact-info-main">
+        <section class="board-of-directors">
+            <h2>Board of Directors</h2>
+
+           
+            <div class="gallery-grid three-main-directors">
+                <figure>
+                
+                    <!--source media="(max-width:300px)" srcset="images/blue-cloud-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/blue-cloud-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/blue-cloud-1200x800.jpg"-->
+                    <img src="images/contact-us/director1-500.jpg" alt="A female director">
+                    <h4>Johanna Dietrich Von Schaferotenstein</h4>
+                    <p>Director</p>
+                </figure>
+    
+                    <!--IMAGE RAINBOW-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/rainbow-over-lake-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/rainbow-over-lake-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/rainbow-over-lake-1200x800.jpg"-->
+                    <img src="images/contact-us/director2-500.jpg" alt="A male director">
+                    <h4>Sergei Obamovich Krivokrasov</h4>
+                    <p>Director</p>
+                   
+                </figure>
+    
+                    <!--IMAGE BUS SNOW-->
+                <figure>
+                    <!--source media="(max-width:300px)" srcset="images/bus-snow-300x200.jpg">
+                    <source media="(max-width:600px)" srcset="images/bus-snow-600x400.jpg">
+                    <source media="(max-width:1200px)" srcset="images/bus-snow-1200x800.jpg.jpg"-->
+                    <img src="images/contact-us/director3-500.jpg" alt="A male director">
+                    <h4>Juan Corriendo de las Cabras</h4>
+                    <p>Director</p>
+         
+                </figure>
+            </div>
+
+                <section class="elias-grid">
+
+                    <img src="images/contact-us/elias-maximo.jpeg" alt="Elias Maximo">
+                    <div class="content">
+                        <h3>Elias Maximo - Director and Founder</h3>
+                        <hr>
+                        <p>It had always been a dream of ELias to help the businessowners of
+                            his country to grow as rich as he was, so he created Camp commerce
+                            the most famous chamber of comerce in Brazil. He also has helped 
+                            with volunteer projects that teach children how to be entrapanours
+                            Also owner of a chain of schools in Brazil which teaches 10
+                            different languages to people all over the world.
+                        </p>
+                    </div>
+                </section>
+            
+            
+        </section>
+    
+        <form method="get" action="contact-info-thanks.html" onSubmit="return check_Alpha(this)">
+            <fieldset>
+                <legend>Get in Touch With Us </legend>
+                <label class="top">Full Name* <input type="text" name="fname" required ></label>
+               
+                
+                
+                <label class="top">E-mail* <input type="email" name="email" placeholder="person@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="123555123" required></label>  
+                <br>
+               
+                <label>
+                    <textarea name="comments" placeholder=" Write your comments and questions here..." required></textarea>
+                </label>
+                <br>
+                <br>
+            
+                <input type="submit" value="Send Question"  class="submitBtn">
+            </fieldset>
+        </form>
+
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.605130888306!2d-47.075719985281616!3d-22.927930944389487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8dc04e36f65%3A0x823419e618d7f2a0!2sR.%20Ribeir%C3%A3o%20Bonito%20-%20S%C3%A3o%20Bernardo%2C%20Campinas%20-%20SP%2C%2013030-150!5e0!3m2!1sen!2sbr!4v1639569875268!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-information">
+            
+         
+              
+                <p> <strong>Contact us!</strong>
+                <br>
+                Camp Chamber
+                <br> &#x260E; telephone number: +99 9999 9999
+                <br> &#x2709; e-mail: nimbus@gmail.com
+                <br>
+                
+                <a href="https://www.facebook.com/"><img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+                    srcset="images/facebook-40x40.png 1x,
+                    images/facebook-80x80.png 2x,
+                    images/facebook-120x120.png 3x" alt="facebook logo"></a>
+                
+                <a href="https://twitter.com"><img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+                    srcset="images/social-media-logo/twitter-40x40.jpg 1x,
+                    images/social-media-logo/twitter-80x80.jpg 2x,
+                    images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo"></a>
+    
+                <a href="https://www.instagram.com/"><img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+                    srcset="images/social-media-logo/instagram-40x40.jpg 1x,
+                    images/social-media-logo/instagram-80x80.jpg 2x,
+                    images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo"></a>
+                </div>      
+        
+        </section>
 
         
+        
+    
+    
+    </main>
+    <footer>
         <div class="contact-information">
             
-            <img class = "map" src="images/map.png" alt="map of idaho">
+         
 
             <p> The Weather Site 
             <br> &#x260E; telephone number: +99 9999 9999
             <br> &#x2709; e-mail: nimbus@gmail.com
             <br>
             
-            <img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
+            <a href="https://www.facebook.com/"><img class = "social-media" src="images/social-media-logo/facebook-40x40.png"
                 srcset="images/facebook-40x40.png 1x,
                 images/facebook-80x80.png 2x,
-                images/facebook-120x120.png 3x" alt="facebook logo">
+                images/facebook-120x120.png 3x" alt="facebook logo"></a>
             
-                <img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
+            <a href="https://twitter.com"><img class = "social-media" src="images/social-media-logo/twitter-40x40.jpg"
                 srcset="images/social-media-logo/twitter-40x40.jpg 1x,
                 images/social-media-logo/twitter-80x80.jpg 2x,
-                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo">
+                images/social-media-logo/twitter-120x120.jpg 3x" alt="twitter logo"></a>
 
-                <img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
+            <a href="https://www.instagram.com/"><img class = "social-media" src="images/social-media-logo/instagram-40x40.jpg"
                 srcset="images/social-media-logo/instagram-40x40.jpg 1x,
                 images/social-media-logo/instagram-80x80.jpg 2x,
-                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo">
-
-            
-            
-        </p></div>
-    
-    
-    </main>
-    <footer>
+                images/social-media-logo/instagram-120x120.jpg 3x" alt="instagram logo"></a>
+            </div>
+            <div>
         <p>&copy; <span id="copyrightyear"></span>  | Elias Yuri Maximo | Sao Paulo, Brazil |<a href="https://www.byui.edu/online"> BYUI Online Learning</a></p>
-        <p><span id="currentdate"></span> </p>    
+        <p><span id="currentdate"></span> </p>   
+            </div>
+        
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
           <script>
